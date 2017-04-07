@@ -1,0 +1,56 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+
+    <body data-ng-app="demoApp">
+
+        <div class="container">
+            <div data-ng-view=""></div>          <!--Place holder for views-->
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+
+        <script src="controller.js"></script>
+
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
+
+<!--<div class="container">-->
+<!--<p class="h2">Hello world! This is View X.</p>-->
+<!--Name:-->
+<!--<label>-->
+<!--<input type="text" data-ng-model="name"/> {{ name }}-->
+<!--</label>-->
+
+<!--<ul>-->
+<!--<li data-ng-repeat="cust in customers | filter:{name:name} | orderBy:'city'">{{ cust.name | uppercase }} - {{ cust.city | lowercase }}</li>-->
+<!--</ul>-->
+<!--<br/>-->
+<!--Costumer Name:-->
+<!--<input type="text" data-ng-model="newCustomer.name">-->
+<!--<br/>-->
+<!--Costumer City:-->
+<!--<input type="text" data-ng-model="newCustomer.city">-->
+<!--<button data-ng-click="addCustomer()">Add Customer</button>-->
+<!--<br>-->
+<!--&lt;!&ndash;<a href="#/view1">View 1</a>&ndash;&gt;-->
+<!--</div>-->

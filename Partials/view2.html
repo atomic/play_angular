@@ -1,0 +1,22 @@
+<div class="container">
+    <p class="h2">Hello world! This is View 2.</p>
+    <div class="container">
+        Name:
+        <label>
+            <input type="text" data-ng-model="name"/> {{ name }}
+        </label>
+
+        <ul>
+            <li data-ng-repeat="cust in costumers | filter:{name:name} | orderBy:'city'">{{ cust.name | uppercase }} - {{ cust.city | lowercase }}</li>
+        </ul>
+        <br/>
+        Costumer Name:
+        <input type="text" data-ng-model="newCustomer.name">
+        <br/>
+        Costumer City:
+        <input type="text" data-ng-model="newCustomer.city">
+        <button data-ng-click="addCustomer()">Add Customer</button>
+        <br>
+        <a href="#/view1">View 1</a>
+    </div>
+</div>
